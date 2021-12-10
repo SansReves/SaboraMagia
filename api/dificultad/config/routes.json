@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dificultads",
+      "handler": "dificultad.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dificultads/count",
+      "handler": "dificultad.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dificultads/:id",
+      "handler": "dificultad.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dificultads",
+      "handler": "dificultad.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dificultads/:id",
+      "handler": "dificultad.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dificultads/:id",
+      "handler": "dificultad.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dificultads",
+  "info": {
+    "name": "Dificultad",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "recetas": {
+      "via": "dificultad",
+      "collection": "receta"
+    }
+  }
+}

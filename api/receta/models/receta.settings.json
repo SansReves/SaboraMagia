@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recetas",
+  "info": {
+    "name": "receta",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tiempo": {
+      "type": "decimal"
+    },
+    "porciones": {
+      "type": "integer",
+      "default": 1,
+      "min": 1
+    },
+    "imagenURL": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "gluten": {
+      "type": "boolean"
+    },
+    "dificultad": {
+      "via": "recetas",
+      "model": "dificultad"
+    }
+  }
+}
